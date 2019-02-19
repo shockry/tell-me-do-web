@@ -1,9 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Button = styled.button`
-  border: none;
-  background-color: maroon;
-  color: #ffffff;
+  border: 2px solid maroon;
   padding: 16px 0px;
   width: 50%;
   margin-top: 66px;
@@ -11,8 +9,11 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 2px 2px 2px #924747;
+  background-color: transparent;
+  color: maroon;
   :hover {
-    background: #5f0101;
+    background: maroon;
+    color: #ffffff;
     box-shadow: 2px 2px 2px #924747;
   }
   :active {
@@ -22,6 +23,18 @@ const Button = styled.button`
   :focus {
     outline: none;
   }
+
+  ${props =>
+    props.primary &&
+    css`
+      border: none;
+      background-color: maroon;
+      color: #ffffff;
+      :hover {
+        background: #5f0101;
+        box-shadow: 2px 2px 2px #924747;
+      }
+    `}
 `;
 
 export default Button;

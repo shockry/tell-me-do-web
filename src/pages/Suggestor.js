@@ -16,8 +16,14 @@ const SuggestorContainer = styled.div`
   background-color: #ffffff;
   border-radius: 4px;
   width: 62vw;
-  padding: 20px;
+  padding: 24px;
   box-shadow: 1px 1px 15px 1px #666666;
+`;
+
+const EditActivityListLink = styled.a`
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
 `;
 
 const Suggestor = props => {
@@ -25,7 +31,8 @@ const Suggestor = props => {
     <SuggestorContainer>
       <SuggestionIntro>How about you</SuggestionIntro>
       <Suggestion>Buy a cat</Suggestion>
-      <Button>Nah</Button>
+      <Button primary>Nah</Button>
+      <EditActivityListLink href="/">Edit activity list</EditActivityListLink>
     </SuggestorContainer>
   );
 };
