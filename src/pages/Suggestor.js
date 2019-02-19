@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+
 import Suggestion from "../components/Suggestion";
 import SuggestionIntro from "../components/SuggestionIntro";
 import Button from "../components/Button";
+import Link from "../components/Link";
 
 const SuggestorContainer = styled.div`
   display: flex;
@@ -20,19 +22,13 @@ const SuggestorContainer = styled.div`
   box-shadow: 1px 1px 15px 1px #666666;
 `;
 
-const EditActivityListLink = styled.a`
-  display: flex;
-  align-self: flex-end;
-  margin-top: 10px;
-`;
-
 const Suggestor = props => {
   return (
     <SuggestorContainer>
       <SuggestionIntro>How about you</SuggestionIntro>
       <Suggestion>Buy a cat</Suggestion>
       <Button primary>Nah</Button>
-      <EditActivityListLink href="/">Edit activity list</EditActivityListLink>
+      <Link href="/">Edit activity list</Link>
     </SuggestorContainer>
   );
 };
