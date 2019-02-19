@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 const Link = styled.a`
-  display: flex;
-  align-self: flex-end;
-  margin-top: 10px;
   color: #868484;
 
   :visited {

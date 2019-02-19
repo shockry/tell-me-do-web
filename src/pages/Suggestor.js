@@ -22,13 +22,19 @@ const SuggestorContainer = styled.div`
   box-shadow: 1px 1px 15px 1px #666666;
 `;
 
+const EditActivitiesLink = styled(Link)`
+  display: flex;
+  align-self: flex-end;
+  margin-top: 20px;
+`;
+
 const Suggestor = props => {
   return (
     <SuggestorContainer>
       <SuggestionIntro>How about you</SuggestionIntro>
       <Suggestion>Buy a cat</Suggestion>
       <Button primary>Nah</Button>
-      <Link href="/">Edit activity list</Link>
+      <EditActivitiesLink href="/">Edit activity list</EditActivitiesLink>
     </SuggestorContainer>
   );
 };
