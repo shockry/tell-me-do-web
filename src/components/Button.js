@@ -11,10 +11,10 @@ const Button = styled.button`
   box-shadow: 2px 2px 2px #924747;
   background-color: transparent;
   color: maroon;
+
   :hover {
     background: maroon;
     color: #ffffff;
-    box-shadow: 2px 2px 2px #924747;
   }
   :active {
     transform: translateY(2px);
@@ -32,7 +32,6 @@ const Button = styled.button`
       color: #ffffff;
       :hover {
         background: #5f0101;
-        box-shadow: 2px 2px 2px #924747;
       }
     `}
 `;
