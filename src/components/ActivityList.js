@@ -39,6 +39,7 @@ const ActivityList = ({ activities }) => {
         <ActivityCircle
           marginTop={activity.margin}
           size={getCircleSize(activity)}
+          title={activity.name}
           key={index}
         >
           {activity.name.length <= ACTIVITY_CIRCLE_MAX_SIZE
