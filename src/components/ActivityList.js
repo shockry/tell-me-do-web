@@ -25,6 +25,7 @@ const ActivityWrapper = styled.div`
   flex-grow: 1;
   flex-shrink: 1;
   justify-content: center;
+  margin-bottom: 20px;
 `;
 
 const getCircleSize = activity =>

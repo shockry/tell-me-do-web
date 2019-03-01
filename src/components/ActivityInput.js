@@ -9,6 +9,10 @@ const TextInput = styled.input`
   width: 38em;
   font-weight: bold;
   color: #5e5d85;
+
+  :focus {
+    outline: none;
+  }
 `;
 
 const ActivityInputWrapper = styled.div`
