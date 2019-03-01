@@ -1,0 +1,1 @@
+export const ACTIVITY_CIRCLE_MAX_SIZE = 25;

@@ -6,7 +6,7 @@ import SuggestionIntro from "../components/SuggestionIntro";
 import Button from "../components/Button";
 import Link from "../components/Link";
 
-const SuggestorContainer = styled.div`
+const SuggestorWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +30,12 @@ const EditActivitiesLink = styled(Link)`
 
 const Suggestor = props => {
   return (
-    <SuggestorContainer>
+    <SuggestorWrapper>
       <SuggestionIntro>How about you</SuggestionIntro>
       <Suggestion>Buy a cat</Suggestion>
       <Button primary>Nah</Button>
       <EditActivitiesLink href="/">Edit activity list</EditActivitiesLink>
-    </SuggestorContainer>
+    </SuggestorWrapper>
   );
 };
 

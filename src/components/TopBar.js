@@ -3,7 +3,7 @@ import styled from "styled-components";
 import UserAvatar from "./UserAvatar";
 import LogoutButton from "./LogoutButton";
 
-const TopBarContainer = styled.div`
+const TopBarWrapper = styled.div`
   position: fixed;
   display: flex;
   padding: 6px 0px 0px 6px;
@@ -11,10 +11,10 @@ const TopBarContainer = styled.div`
 
 const TopBar = props => {
   return (
-    <TopBarContainer>
+    <TopBarWrapper>
       <UserAvatar>A</UserAvatar>
       <LogoutButton onClick={() => console.log("HAHA")}> Logout </LogoutButton>
-    </TopBarContainer>
+    </TopBarWrapper>
   );
 };
 
